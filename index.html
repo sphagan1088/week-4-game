@@ -4,6 +4,8 @@
 	<title>Crystal Collector</title>
 	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	
 </head>
 <body>
 	
@@ -12,10 +14,10 @@
 			<h1> Crystal Collector!</h1>
 		</div>
 
-		<div class="instructions">
+		<div id="instructions">
 			<p>You will be given a random number at the start of the game.</p>
 
-			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of point to your total score.</p>
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
 
 			<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
 
@@ -25,9 +27,19 @@
 		</div>
 		
 		
-		<div id="randomNumber">50</div>
+		<div id="targetNumber">
+			<h2>Target Number:
+				<span id="randomNumber"></span></h2>
+		</div>
 
-		<div id="winLoss"></div>
+		<div id="score">
+			<h3>
+				<span id="totalWins"></span>
+			</h3>
+			<h3>
+				<span id="totalLosses"></span>
+			</h3>
+		</div>
 
 		<div class="icons">
 
@@ -50,12 +62,22 @@
 		</div>
 
 		<div>
-			<h4>Your total score is:</h4>
+			<h4>Your total score is:
+				<span id="userScore"></span>
+				
+			</h4>
 		</div>
 
-		<div id="totalscore"> 78
-		</div>
+
 	</div>
+
+	<script
+  	src="https://code.jquery.com/jquery-3.2.1.min.js"
+  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  	crossorigin="anonymous">
+  		
+  	</script>
+	<script type="text/javascript" src="./assets/javascript/game.js"></script>
 		
 
 </body>

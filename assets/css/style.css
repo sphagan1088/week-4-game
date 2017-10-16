@@ -1,7 +1,7 @@
 .container {
 	margin:auto;
 	width: 100%;
-	height: 1000px;
+	padding-bottom: 20px;
 	max-width: 960px;
 	background-image: url(../images/darkedges.png);
 }
@@ -21,7 +21,7 @@ h1 {
 
 }
 
-.instructions {
+#instructions {
 	background-color: #D3D3D3;
 	width: 400px;
 	margin-left: 10px;
@@ -38,7 +38,7 @@ p {
 
 }
 
-#randomNumber {
+#targetNumber {
 	float: left;
 	margin-top: 25px;
 	margin-left: 10px;
@@ -51,14 +51,30 @@ p {
 	color: white;
 }
 
-#winLoss {
+#score {
 	margin-left: 10px;
 	margin-top: 25px;
 	float: left;
 	background-color: #4682B4;
-	width: 100px;
+	width: 150px;
 	height: 130px;
 	
+}
+
+#totalWins {
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 30px;
+
+}
+
+#totalLosses {
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 30px;
+
 }
 
 img {
@@ -76,7 +92,7 @@ img {
 	height: 110px;
 	margin-left: 10px;
 	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 #greenicon {
@@ -86,7 +102,7 @@ img {
 	height: 110px;
 	margin-left: 10px;
 	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 #redicon {
@@ -96,7 +112,7 @@ img {
 	height: 110px;
 	margin-left: 10px;
 	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 #yellowicon {
@@ -107,13 +123,16 @@ img {
 	margin-left: 10px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
+
+
 
 h4 {
 	clear: both;
+	font-size: 32px;
 	width:300px;
-	height:30px;
+	height:100px;
 	background-color: #2E8B57;
 	color: white;
 	padding-top: 10px;
@@ -122,18 +141,6 @@ h4 {
 
 }
 
-#totalscore {
-	width:300px;
-	height:130px;
-	background-color: #2E8B57;
-	color: white;
-	padding-top: 10px;
-	padding-left: 10px;
-	margin-top: 20px;
-	margin-left: 10px;
-	font-size: 40px;
-
-}
 
 
 
